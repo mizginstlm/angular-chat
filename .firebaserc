@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "chatapp-b0ee8"
+  },
+  "targets": {
+    "chatapp-b0ee8": {
+      "hosting": {
+        "angular-chat": [
+          "chatapp-b0ee8"
+        ]
+      }
+    }
+  }
+}

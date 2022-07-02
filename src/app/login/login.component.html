@@ -1,16 +1,30 @@
+
+
 <div class="container">
   <form class="example-form" [formGroup]="loginForm" (ngSubmit)="onFormSubmit">
-      <h2>Please login using your nickname</h2>
+     
+      <h2>Start Messaging</h2>
+
       <mat-form-field class="example-full-width">
         <mat-label>Nickname</mat-label>
-        <input matInput placeholder="Enter your nickname" formControlName="nickname"
+        <input autocomplete="off" matInput placeholder="Enter your nickname" formControlName="nickname"
                 [errorStateMatcher]="matcher">
         <mat-error>
           <span *ngIf="!loginForm.valid">Please enter your nickname</span>
         </mat-error>
       </mat-form-field>
-      <div class="button-row">
-          <button type="submit" [disabled]="!loginForm.valid" mat-fab color="primary"><mat-icon>login</mat-icon></button>
+
+      <mat-form-field class="example-full-widthp">
+        <mat-label>Password</mat-label>
+        <input  class="inputp" autocomplete="off" matInput placeholder="Enter your Password" formControlName="nickname"
+                [errorStateMatcher]="matcher">
+        <mat-error>
+          <span *ngIf="!loginForm.valid">Please enter your password</span>
+        </mat-error>
+      </mat-form-field>
+
+      <div >
+          <button class="button" type="button" [disabled]="!loginForm.valid">Login</button>
       </div>
   </form>
 </div>

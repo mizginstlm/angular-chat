@@ -51,6 +51,7 @@
               "outputHashing": "all"
             },
             "development": {
+              "preserveSymlinks": true,
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
@@ -95,6 +96,16 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "angular-chat:build:production",
+            "firebaseProject": "chatapp-b0ee8",
+            "firebaseHostingSite": "chatapp-b0ee8"
           }
         }
       }

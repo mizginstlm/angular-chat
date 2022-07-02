@@ -1,7 +1,19 @@
 .example-container {
-  position: relative;
+  position: absolute;
   padding: 5px;
+  padding-top: 40px;
+  background-color: #8C55AA;
 }
+
+h2{
+  padding-top: 40px;
+  color: #8C55AA;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 23px;
+}
+
 
 .example-form {
   min-width: 150px;
@@ -11,16 +23,77 @@
 
 .example-full-width {
   width: 100%;
+  width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 50px;
+    margin-left: 46px;
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .example-full-width:nth-last-child(0) {
   margin-bottom: 10px;
 }
 
-.button-row {
-  margin: 10px 0;
+.example-full-widthp {
+  width: 76%;
+  color: rgb(38, 50, 56);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  margin-left: 46px;
+  text-align: center;
+  margin-bottom: 27px;
+  font-family: 'Lucida Sans Unicode', sans-serif;
+}
+
+.inputp{
+  -webkit-text-security: disc;
+}
+
+
+.example-full-widthp:focus, .example-full-width:focus {
+  border: 2px solid rgba(0, 0, 0, 0.18) !important;
+  
+}
+.button {
+text-align: center;
+align-items: center;
+display: grid;
+cursor: pointer;
+        border-radius: 5em;
+        background: linear-gradient(to right, #9C27B0, #E040FB);
+        border: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 35%;
+        font-size: 13px;
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
 }
 
 .mat-flat-button {
   margin: 5px;
+
 }
