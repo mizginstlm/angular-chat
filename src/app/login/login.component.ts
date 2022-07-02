@@ -15,6 +15,9 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
   }
 }
 
+
+
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -24,12 +27,13 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
 export class LoginComponent implements OnInit {
 loginForm!: FormGroup;
   nickname = '';
+  password = '';
   ref = firebase.database().ref('users/');
   matcher = new MyErrorStateMatcher();
   constructor(private router: Router, private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
-  if (localStorage.getItem('nickname')) {
+  if (localStorage.getItem('nickname, password')) {
       this.router.navigate(['/roomlist']);
     }
     this.loginForm = this.formBuilder.group({
